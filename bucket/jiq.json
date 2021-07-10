@@ -1,0 +1,16 @@
+{
+    "version": "0.7.1",
+    "description": "jid on jq - interactive JSON query tool using jq expressions",
+    "homepage": "https://github.com/fiatjaf/jiq/",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/fiatjaf/jiq/blob/master/LICENSE"
+    },
+    "url": "https://github.com/fiatjaf/jiq/releases/download/0.7.1/jiq_windows_amd64.exe#/jiq.exe",
+    "hash": "683f6e63027c93f0cee49439aa7dad348795913a5bb08ab2da8c53e978317b3c",
+    "bin": "jiq.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/fiatjaf/jiq/releases/download/$version/jiq_windows_amd64.exe"
+    }
+}
