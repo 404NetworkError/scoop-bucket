@@ -17,13 +17,13 @@
         }
     },
     "installer": {
-        "script": "Invoke-ExternalCommand \"$dir\\$fname\" -ArgumentList '/noredist' -RunAs | Out-Null"
+        "script": "Invoke-ExternalCommand \"$dir\\$fname\" -ArgumentList '/S /noredist' -RunAs | Out-Null"
     },
     "uninstaller": {
         "script": [
             "$uninstaller = (Get-ItemProperty -ErrorAction Ignore \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HardlinkShellExt\" -Name UninstallString).UninstallString",
             "if (-not $uninstaller) { $uninstaller = (Get-ItemProperty -ErrorAction Ignore \"HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HardlinkShellExt\" -Name UninstallString).UninstallString }",
-            "Invoke-ExternalCommand \"$uninstaller\" -RunAs | Out-Null"
+            "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList '/S /noredist' -RunAs | Out-Null"
         ]
     },
     "checkver": "Version ([\\d.]+)",
