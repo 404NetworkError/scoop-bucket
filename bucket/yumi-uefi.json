@@ -3,12 +3,12 @@
     "description": "Multisystem Bootable USB Creator",
     "homepage": "https://www.pendrivelinux.com/yumi-multiboot-usb-creator/",
     "license": "GPL-2.0-only",
-    "url": "https://www.pendrivelinux.com/downloads/YUMI/YUMI-UEFI-0.0.3.9.exe#/YUMI.exe",
+    "url": "https://www.pendrivelinux.com/downloads/YUMI/YUMI-UEFI-0.0.3.9.exe#/YUMI-UEFI.exe",
     "hash": "0ED440B97AB7BC2C62C0D783B4FCF1673376F3AB762313447661DECCE61F7093",
-    "bin": "YUMI.exe",
+    "bin": "YUMI-UEFI.exe",
     "shortcuts": [
         [
-            "YUMI.exe",
+            "YUMI-UEFI.exe",
             "YUMI (UEFI+BIOS)"
         ]
     ],
