@@ -26,8 +26,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.fosshub.com/InfraRecorder.html",
-        "regex": "ir([\\d]+)_portable(_x64)?\\.zip"
+        "url": "http://infrarecorder.org/?page_id=5",
+        "regex": "version ([\\d.]+) for Windows"
     },
     "autoupdate": {
         "architecture": {
