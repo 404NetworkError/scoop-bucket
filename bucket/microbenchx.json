@@ -1,0 +1,16 @@
+{
+    "version": "1.0.3",
+    "description": "Micro benchmarks CPU/GPU",
+    "homepage": "https://github.com/CXWorld/MicroBenchX",
+    "license": "MIT",
+    "url": "https://github.com/CXWorld/MicroBenchX/releases/download/v1.0.3/MicroBenchX_v1.0.3.zip",
+    "hash": "8155b721038d0e35db38b288adc711bc2a9586ed93bbd15109ca37d29e7c1e4b",
+    "bin": [
+        "MicroBenchX.Ipc.exe",
+        "MicroBenchX.C2CLatency.exe"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/CXWorld/MicroBenchX/releases/download/v$version/MicroBenchX_v$version.zip"
+    }
+}
