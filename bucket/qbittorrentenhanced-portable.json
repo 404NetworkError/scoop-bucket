@@ -1,5 +1,5 @@
 {
-    "version": "4.4.3.11",
+    "version": "4.4.3.12",
     "description": "qBittorrent Enhanced. BitTorrent client with anti-leech enhancement.",
     "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
     "license": {
@@ -9,8 +9,8 @@
     "notes": "Web UI Theme https://github.com/WDaan/VueTorrent",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.3.11/qbittorrent_enhanced_4.4.3.11_Qt6_setup.exe#/dl.7z",
-            "hash": "a256dda7112224db67d51b27ad4f85c601dc3ba660439041f1fe233986e03a82"
+            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.3.12/qbittorrent_enhanced_4.4.3.12_Qt6_setup_fix.exe#/dl.7z",
+            "hash": "60ceb92838c086243fb04934add0fb4421e7be1bdbbfa43b894575ca59a024bf"
         },
         "32bit": {
             "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.3.11/qbittorrent_enhanced_4.4.3.11_setup.exe#/dl.7z",
