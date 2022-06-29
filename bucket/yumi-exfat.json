@@ -1,0 +1,23 @@
+{
+    "version": "1.0.0.4",
+    "description": "Multisystem Bootable USB Creator",
+    "homepage": "https://www.pendrivelinux.com/yumi-multiboot-usb-creator/",
+    "license": "GPL-2.0-only",
+    "url": "https://www.pendrivelinux.com/downloads/YUMI/YUMI-exFAT-1.0.0.4.exe#/YUMI-exFAT.exe",
+    "hash": "0aac96c17e76bae891822971ac8108097e0b6889ee9e0c2770d18cdaedce6b1c",
+    "bin": "YUMI-exFAT.exe",
+    "shortcuts": [
+        [
+            "YUMI-exFAT.exe",
+            "YUMI (exFAT)"
+        ]
+    ],
+    "checkver": "YUMI-exFAT-([\\d.]+)\\.exe",
+    "autoupdate": {
+        "url": "https://www.pendrivelinux.com/downloads/YUMI/YUMI-exFAT-$version.exe",
+        "hash": {
+            "url": "https://www.pendrivelinux.com/yumi-multiboot-usb-creator/",
+            "regex": "(?sm)$basename.*?$sha256"
+        }
+    }
+}
