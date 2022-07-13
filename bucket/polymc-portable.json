@@ -1,0 +1,53 @@
+{
+    "version": "1.3.2",
+    "description": "An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
+    "homepage": "https://polymc.org/",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PolyMC/PolyMC/releases/download/1.3.2/PolyMC-Windows-x86_64-Portable-1.3.2.zip",
+            "hash": "bbe8b23cc396cc36ffe96ec382b74ab7a328fb838d3bf11a33c77307a19d0670"
+        },
+        "32bit": {
+            "url": "https://github.com/PolyMC/PolyMC/releases/download/1.3.2/PolyMC-Windows-i686-Portable-1.3.2.zip",
+            "hash": "f96f4c4d8087f184590ee2ce8c9043421a67356d2fae6562b5bbbc5a1be58e63"
+        }
+    },
+    "pre_install": [
+        "if (-not (Test-Path \"$dir\\accounts.json\")) { New-Item \"$dir\\accounts.json\" -ItemType File | Out-Null }",
+        "if (-not (Test-Path \"$dir\\polymc.cfg\")) { New-Item \"$dir\\polymc.cfg\" -ItemType File -Value \"Analytics=false`r`nAutoUpdate=false`r`nIconTheme=pe_colored`r`nLaunchMaximized=true\" | Out-Null }",
+        "if (-not (Test-Path \"$dir\\notifications.json\")) { New-Item \"$dir\\notifications.json\" -ItemType File | Out-Null }"
+    ],
+    "bin": "PolyMC.exe",
+    "shortcuts": [
+        [
+            "PolyMC.exe",
+            "PolyMC"
+        ]
+    ],
+    "persist": [
+        "accounts",
+        "assets",
+        "instances",
+        "libraries",
+        "meta",
+        "themes",
+        "translations",
+        "accounts.json",
+        "polymc.cfg",
+        "notifications.json"
+    ],
+    "checkver": {
+        "github": "https://github.com/PolyMC/PolyMC"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PolyMC/PolyMC/releases/download/$version/PolyMC-Windows-x86_64-Portable-$version.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/PolyMC/PolyMC/releases/download/$version/PolyMC-Windows-i686-Portable-$version.zip"
+            }
+        }
+    }
+}
