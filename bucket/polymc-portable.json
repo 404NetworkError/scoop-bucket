@@ -18,16 +18,16 @@
         ]
     ],
     "persist": [
-        "accounts",
         "assets",
+        "icons",
         "instances",
         "libraries",
         "meta",
+        "mods",
         "themes",
         "translations",
         "accounts.json",
-        "polymc.cfg",
-        "notifications.json"
+        "polymc.cfg"
     ],
     "checkver": {
         "github": "https://github.com/PolyMC/PolyMC"
