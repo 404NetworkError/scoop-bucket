@@ -2,7 +2,10 @@
     "version": "1.1",
     "description": "WinMTR Live in an extended fork of Appnor's WinMTR with IPv6 support and other different enhancements and bug fixes",
     "homepage": "https://github.com/AUnited/WinMTR",
-    "license": "GPL-2.0-only",
+    "license": {
+        "identifier": "GPL-2.0-only",
+        "url": "https://github.com/AUnited/WinMTR/blob/master/LICENSE"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/AUnited/WinMTR/releases/download/1.1/WinMTR1.1_x64.zip",
