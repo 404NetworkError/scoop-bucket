@@ -1,0 +1,38 @@
+{
+    "version": "2022-08-14",
+    "description": "A transport stream muxer for remuxing/muxing elementary streams, EVO/VOB/MPG, MKV/MKA, MP4/MOV, TS, M2TS to TS to M2TS.",
+    "homepage": "https://github.com/justdan96/tsMuxer",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/justdan96/tsMuxer/releases/download/nightly-2022-08-14-03-13-07/w64.zip",
+            "hash": "0ae8bf79a70ed88b490adeb209d6e3e38b9932d608f0b375ad42195f727611cf"
+        },
+        "32bit": {
+            "url": "https://github.com/justdan96/tsMuxer/releases/download/nightly-2022-08-14-03-13-07/w32.zip",
+            "hash": "f0080a074d58f2aaca6bef68f75ccf98bfc8874503441cc15c69d98d2453a451"
+        }
+    },
+    "bin": "tsMuxeR.exe",
+    "shortcuts": [
+        [
+            "tsMuxerGUI.exe",
+            "tsMuxeR GUI"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/justdan96/tsMuxer/releases",
+        "regex": "/releases/download/nightly-(?<date>\\d{4}-\\d{2}-\\d{2})-(?<time>\\d{2}-\\d{2}-\\d{2})/w64.zip",
+        "replace": "${date}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/justdan96/tsMuxer/releases/download/nightly-$matchDate-$matchTime/w64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/justdan96/tsMuxer/releases/download/nightly-$matchDate-$matchTime/w32.zip"
+            }
+        }
+    }
+}
