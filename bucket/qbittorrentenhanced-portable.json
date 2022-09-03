@@ -1,5 +1,5 @@
 {
-    "version": "4.4.4.10",
+    "version": "4.4.5.10",
     "description": "qBittorrent Enhanced. BitTorrent client with anti-leech enhancement.",
     "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
     "license": {
@@ -9,12 +9,12 @@
     "notes": "Web UI Theme https://github.com/WDaan/VueTorrent",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.4.10/qbittorrent_enhanced_4.4.4.10_Qt6_setup.exe#/dl.7z",
-            "hash": "73c96fedf6672bd766a77d29a04fd7a233bc099b1d4368b1720ab5c2a69e24eb"
+            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.5.10/qbittorrent_enhanced_4.4.5.10_Qt6_setup.exe#/dl.7z",
+            "hash": "fe00d2cb12b2e690e1817d8e075acd97db6a2432e1a9d18ededa01c64130aa79"
         },
         "32bit": {
-            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.4.10/qbittorrent_enhanced_4.4.4.10_setup.exe#/dl.7z",
-            "hash": "481e27fe65d3a008b47045bd3cdef7ac25c9729ab1af4da5276193b0004701e6"
+            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.5.10/qbittorrent_enhanced_4.4.5.10_setup.exe#/dl.7z",
+            "hash": "164e5a4600226b738e4efdc68b6a3b36a2537b49ac17efd45baf6616c612e8c8"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
