@@ -10,8 +10,13 @@
     },
     "pre_install": [
         "if (-not (Test-Path \"$dir\\accounts.json\")) { New-Item \"$dir\\accounts.json\" -ItemType File | Out-Null }",
-        "if (-not (Test-Path \"$dir\\prismlauncher.cfg\")) { New-Item \"$dir\\prismlauncher.cfg\" -ItemType File -Value \"Analytics=false`r`nAutoUpdate=false`r`nIconTheme=pe_colored`r`nLaunchMaximized=true\" | Out-Null }",
+        "if (-not (Test-Path \"$dir\\prismlauncher.cfg\")) { New-Item \"$dir\\prismlauncher.cfg\" -ItemType File -Value \"Analytics=false`r`nAutoUpdate=false`r`nIconTheme=pe_colored`r`nLaunchMaximized=true`r`nLanguage=en_US`r`nIgnoreJavaWizard=true`r`nPastebinURL=`r`n\" | Out-Null }",
         "if (-not (Test-Path \"$dir\\notifications.json\")) { New-Item \"$dir\\notifications.json\" -ItemType File | Out-Null }"
+    ],
+    "notes": [
+        "One time install specific requirements:",
+        "- The default install language is set to \"American English\". This can be changed in the application.",
+        "- The Java Runtime path will need to be manually set in the application."
     ],
     "bin": "prismlauncher.exe",
     "shortcuts": [
