@@ -1,10 +1,10 @@
 {
-    "version": "5.0",
+    "version": "5.1",
     "description": "An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
     "homepage": "https://prismlauncher.org/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/5.0/PrismLauncher-Windows-Portable-5.0.zip",
-    "hash": "c5f3453cbb357db0378c8969949012699218adb9617c03707226f11cf3044662",
+    "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/5.1/PrismLauncher-Windows-Portable-5.1.zip",
+    "hash": "2e30a47db3486566fb4a9325598f1568938c0dc692171a918038ca92de433777",
     "suggest": {
         "Java Runtime Environment": "java/temurin-jre"
     },
