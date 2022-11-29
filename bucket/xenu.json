@@ -11,11 +11,10 @@
             "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Setup.exe\", \"$dir\\uninst.exe\" -Force -Recurse"
         ]
     },
-    "bin": "Xenu.exe",
     "shortcuts": [
         [
             "Xenu.exe",
-            "Xenu"
+            "Xenu's Link Sleuth"
         ]
     ],
     "checkver": {
