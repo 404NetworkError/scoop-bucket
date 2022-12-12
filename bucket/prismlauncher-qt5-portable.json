@@ -1,17 +1,32 @@
 {
-    "version": "5.2",
-    "description": "An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability. Qt 5 build that still supports legacy Windows like 8.1 and 7.",
+    "version": "6.0",
+    "description": "An open source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability. Qt 5 build still supports legacy Windows like 8.1 and 7.",
     "homepage": "https://prismlauncher.org/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/5.2/PrismLauncher-Windows-Legacy-Portable-5.2.zip",
-    "hash": "aa2319d2391bfecaabac0dc822a18d4d8e025e0465aeaac65bb89b6559ecf089",
+    "notes": "To add Prism Launcher file association options for .ZIPs and .MRPACKS, run this: \"$dir\\install-associations.reg\"",
+    "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/6.0/PrismLauncher-Windows-MSVC-Legacy-Portable-6.0.zip",
+    "hash": "b1545d422481815e588f42b937df209958f447c12b8d6b3a7086c70256bea4b5",
     "suggest": {
-        "Java Runtime Environment": "java/temurin-jre"
+        "Microsoft Visual C++ Redistributables": "extras/vcredist2022",
+        "Java Runtime Environment": [
+            "java/temurin-jre",
+            "java/temurin8-jre"
+        ]
     },
     "pre_install": [
         "if (-not (Test-Path \"$dir\\accounts.json\")) { New-Item \"$dir\\accounts.json\" -ItemType File | Out-Null }",
         "if (-not (Test-Path \"$dir\\prismlauncher.cfg\")) { New-Item \"$dir\\prismlauncher.cfg\" -ItemType File -Value \"Analytics=false`r`nAutoUpdate=false`r`nIconTheme=pe_colored`r`nLaunchMaximized=true\" | Out-Null }",
         "if (-not (Test-Path \"$dir\\notifications.json\")) { New-Item \"$dir\\notifications.json\" -ItemType File | Out-Null }"
+    ],
+    "post_install": [
+        "'install-associations', 'uninstall-associations' | ForEach-Object {",
+        "    if (Test-Path \"$bucketsdir\\404NetworkError\\scripts\\prismlauncher-qt5-portable\\$_.reg\") {",
+        "        $exePath = \"$dir\\prismlauncher.exe\".Replace('\\', '\\\\')",
+        "        $content = (Get-Content \"$bucketsdir\\404NetworkError\\scripts\\prismlauncher-qt5-portable\\$_.reg\").Replace('$EXEPATH', $exePath)",
+        "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
+        "        Set-Content \"$dir\\$_.reg\" $content -Encoding Ascii -Force",
+        "    }",
+        "}"
     ],
     "bin": "prismlauncher.exe",
     "shortcuts": [
@@ -36,6 +51,6 @@
         "github": "https://github.com/PrismLauncher/PrismLauncher"
     },
     "autoupdate": {
-        "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-Legacy-Portable-$version.zip"
+        "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-MSVC-Legacy-Portable-$version.zip"
     }
 }
