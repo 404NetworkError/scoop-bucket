@@ -52,7 +52,7 @@
         "prismlauncher.cfg"
     ],
     "checkver": {
-        "github": "https://github.com/PrismLauncher/PrismLauncher"
+        "github": "https://github.com/PrismLauncher/PrismLauncher/"
     },
     "autoupdate": {
         "architecture": {

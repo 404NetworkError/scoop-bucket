@@ -48,7 +48,7 @@
         "prismlauncher.cfg"
     ],
     "checkver": {
-        "github": "https://github.com/PrismLauncher/PrismLauncher"
+        "github": "https://github.com/PrismLauncher/PrismLauncher/"
     },
     "autoupdate": {
         "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-MSVC-Legacy-Portable-$version.zip"
