@@ -1,7 +1,7 @@
 {
+    "version": "20220826",
     "homepage": "https://sourceforge.net/projects/imdisk-toolkit/",
     "description": "This tool will let you mount image files of hard drive, cd-rom or floppy, and create one or several ramdisks with various parameters.",
-    "version": "20220826",
     "license": {
         "identifier": "WTFPL",
         "url": "http://www.wtfpl.net/"

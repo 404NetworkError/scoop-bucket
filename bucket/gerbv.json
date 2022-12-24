@@ -1,7 +1,7 @@
 {
+    "version": "2.9.5",
     "homepage": "https://gerbv.github.io/",
     "description": "Viewer for Gerber RS-274X files, Excellon drill files, and CSV pick-and-place files",
-    "version": "2.9.5",
     "license": {
         "identifier": "GPL-2.0-or-later",
         "url": "https://github.com/gerbv/gerbv/blob/main/COPYING"
