@@ -1,0 +1,34 @@
+{
+    "version": "4.2.4",
+    "description": "macOS Unlocker for VMware Workstation",
+    "homepage": "https://github.com/DrDonk/unlocker",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/DrDonk/unlocker/blob/main/LICENSE"
+    },
+    "url": "https://github.com/DrDonk/unlocker/releases/download/v4.2.4/unlocker424.zip",
+    "hash": "f6f8c9f3e74cc35b76b4f95f03e69b00af76f0518aaf65bba81da4f9ec007bfc",
+    "post_install": "if (Test-Path \"$dir\\linux\") { Remove-Item \"$dir\\linux\" -Force -Recurse }",
+    "shortcuts": [
+        [
+            "windows/unlock.exe",
+            "VMware macOS Unlocker\\Install macOS Unlocker for VMware"
+        ],
+        [
+            "windows/relock.exe",
+            "VMware macOS Unlocker\\Uninstall macOS Unlocker for VMware"
+        ],
+        [
+            "windows/check.exe",
+            "VMware macOS Unlocker\\Check status of macOS Unlocker for VMware"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/DrDonk/unlocker/releases/download/v$version/unlocker$cleanVersion.zip",
+        "hash": {
+            "url": "https://github.com/DrDonk/unlocker/releases/v$version",
+            "regex": "SHA256SUM:[ \\t]+$sha256[ \\t]+unlocker$cleanVersion.zip"
+        }
+    }
+}
