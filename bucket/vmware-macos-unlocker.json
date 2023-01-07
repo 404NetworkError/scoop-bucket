@@ -9,10 +9,27 @@
     "notes": [
         "Copy the VM configuration file (.vmx) and disk image (.vmdk) from",
         "$dir\\templates\\Workstation <Version>\\<Processor type>\\",
-        "to your default \"Virtual Machines\" folder."
+        "to your default \"Virtual Machines\" folder.",
+        "",
+        "Read the wiki for instructions on how to create a recovery image:",
+        "https://github.com/DrDonk/unlocker/wiki/Create-a-bootable-macOS-Recovery-virtual-disk#instructions",
+        "Files located in \"$dir\\recovery_vmdk\\"
     ],
-    "url": "https://github.com/DrDonk/unlocker/releases/download/v4.2.4/unlocker424.zip",
-    "hash": "f6f8c9f3e74cc35b76b4f95f03e69b00af76f0518aaf65bba81da4f9ec007bfc",
+    "url": [
+        "https://github.com/DrDonk/unlocker/releases/download/v4.2.4/unlocker424.zip",
+        "https://github.com/DrDonk/unlocker/files/9992470/recovery_vmdk.zip"
+    ],
+    "hash": [
+        "f6f8c9f3e74cc35b76b4f95f03e69b00af76f0518aaf65bba81da4f9ec007bfc",
+        "2ea8b1082a89e7b4f1231881724d6010f434edb067709125a222f8b8489040a8"
+    ],
+    "suggest": {
+        "Python": "python"
+    },
+    "extract_to": [
+        "",
+        "recovery_vmdk"
+    ],
     "post_install": "if (Test-Path \"$dir\\linux\") { Remove-Item \"$dir\\linux\" -Force -Recurse }",
     "shortcuts": [
         [
@@ -28,15 +45,12 @@
             "VMware macOS Unlocker\\Check status of macOS Unlocker for VMware"
         ]
     ],
-    "persist": [
-        "backup"  
-    ],
+    "persist": "backup",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/DrDonk/unlocker/releases/download/v$version/unlocker$cleanVersion.zip",
-        "hash": {
-            "url": "https://github.com/DrDonk/unlocker/releases/v$version",
-            "regex": "SHA256SUM:[ \\t]+$sha256[ \\t]+unlocker$cleanVersion.zip"
-        }
+        "url": [
+            "https://github.com/DrDonk/unlocker/releases/download/v$version/unlocker$cleanVersion.zip",
+            "https://github.com/DrDonk/unlocker/files/9992470/recovery_vmdk.zip"
+        ]
     }
 }
