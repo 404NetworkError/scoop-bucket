@@ -1,11 +1,16 @@
 {
     "version": "4.2.4",
-    "description": "macOS Unlocker for VMware Workstation",
+    "description": "macOS Unlocker for VMware Workstation 16/17",
     "homepage": "https://github.com/DrDonk/unlocker",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/DrDonk/unlocker/blob/main/LICENSE"
     },
+    "notes": [
+        "Copy the VM configuration file (.vmx) and disk image (.vmdk) from",
+        "$dir\\templates\\Workstation <Version>\\<Processor type>\\",
+        "to your default \"Virtual Machines\" folder."
+    ],
     "url": "https://github.com/DrDonk/unlocker/releases/download/v4.2.4/unlocker424.zip",
     "hash": "f6f8c9f3e74cc35b76b4f95f03e69b00af76f0518aaf65bba81da4f9ec007bfc",
     "post_install": "if (Test-Path \"$dir\\linux\") { Remove-Item \"$dir\\linux\" -Force -Recurse }",
@@ -22,6 +27,9 @@
             "windows/check.exe",
             "VMware macOS Unlocker\\Check status of macOS Unlocker for VMware"
         ]
+    ],
+    "persist": [
+        "backup"  
     ],
     "checkver": "github",
     "autoupdate": {
