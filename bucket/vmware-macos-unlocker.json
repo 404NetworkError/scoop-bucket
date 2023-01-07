@@ -30,6 +30,13 @@
         "",
         "recovery_vmdk"
     ],
+    "pre_install": [
+        "if (-not (Test-Path \"$dir\\recovery_vmdk\")) { New-Item \"$dir\\recovery_vmdk\" -ItemType Directory | Out-Null }",
+        "if (-not (Test-Path \"$persist_dir\\recovery_vmdk\\catalina.vmdk\")) { New-Item \"$dir\\recovery_vmdk\\catalina.vmdk\" -ItemType File | Out-Null }",
+        "if (-not (Test-Path \"$persist_dir\\recovery_vmdk\\bigsur.vmdk\")) { New-Item \"$dir\\recovery_vmdk\\bigsur.vmdk\" -ItemType File | Out-Null }",
+        "if (-not (Test-Path \"$persist_dir\\recovery_vmdk\\monterey.vmdk\")) { New-Item \"$dir\\recovery_vmdk\\monterey.vmdk\" -ItemType File | Out-Null }",
+        "if (-not (Test-Path \"$persist_dir\\recovery_vmdk\\ventura.vmdk\")) { New-Item \"$dir\\recovery_vmdk\\ventura.vmdk\" -ItemType File | Out-Null }"
+    ],
     "post_install": "if (Test-Path \"$dir\\linux\") { Remove-Item \"$dir\\linux\" -Force -Recurse }",
     "shortcuts": [
         [
@@ -45,7 +52,13 @@
             "VMware macOS Unlocker\\Check status of macOS Unlocker for VMware"
         ]
     ],
-    "persist": "backup",
+    "persist": [
+        "backup",
+        "recovery_vmdk\\catalina.vmdk",
+        "recovery_vmdk\\bigsur.vmdk",
+        "recovery_vmdk\\monterey.vmdk",
+        "recovery_vmdk\\ventura.vmdk"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": [
