@@ -8,12 +8,12 @@
     },
     "notes": [
         "Copy the VM configuration file (.vmx) and disk image (.vmdk) from",
-        "$dir\\templates\\Workstation <Version>\\<Processor type>\\",
+        "\"$dir\\templates\\Workstation <Version>\\<Processor type>\\\"",
         "to your default \"Virtual Machines\" folder.",
         "",
         "Read the wiki for instructions on how to create a recovery image:",
         "https://github.com/DrDonk/unlocker/wiki/Create-a-bootable-macOS-Recovery-virtual-disk#instructions",
-        "Files located in \"$dir\\recovery_vmdk\\"
+        "Files located in \"$dir\\recovery_vmdk\\\""
     ],
     "url": [
         "https://github.com/DrDonk/unlocker/releases/download/v4.2.4/unlocker424.zip",
