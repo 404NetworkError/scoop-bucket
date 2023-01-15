@@ -23,7 +23,7 @@
     "hash": "a8e97a8fb1f5d1423dcca5fbe85cfa33c6504faa419bfa31e6eb6f66c3c5abba",
     "architecture": {
         "64bit": {
-            "extract_dir": "64-bit",
+            "extract_dir": "x64",
             "bin": [
                 "Jazz2.exe",
                 "Jazz2_avx2.exe",
@@ -45,7 +45,7 @@
             ]
         },
         "32bit": {
-            "extract_dir": "32-bit",
+            "extract_dir": "x86",
             "bin": "Jazz2.exe",
             "shortcuts": [
                 [
