@@ -9,7 +9,8 @@
     "bin": "qrencode.exe",
     "checkver": {
         "url": "https://sourceforge.net/projects/qrencode-for-windows/rss?path=/",
-        "regex": "QREncode-(4[\\d.]+)_Win32\\(static\\)\\.zip"
+        "regex": "QREncode-([\\d.]+)_Win32\\(static\\)\\.zip",
+        "reverse": "true"
     },
     "autoupdate": {
         "url": "https://downloads.sourceforge.net/project/qrencode-for-windows/QREncode-$version_Win32(static).zip"
