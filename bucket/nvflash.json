@@ -1,10 +1,10 @@
 {
-    "version": "5.735.0",
+    "version": "5.763.0",
     "description": "Flash the graphics card BIOS on NVIDIA graphics cards",
     "homepage": "https://www.techpowerup.com/download/nvidia-nvflash/",
     "license": "Freeware",
-    "url": "https://us2-dl.techpowerup.com/files/nvflash_5.735.zip",
-    "hash": "6CE41B7B6BCB16A07FE23D279DB9A62C5EF9B6D417E85C14A7F04715AB343AA8",
+    "url": "https://us2-dl.techpowerup.com/files/nvflash_5.763.zip",
+    "hash": "1E2BB2B15CC5691F974DDDB68E1E21778E960DAE6EACFCE441C89F4A494FEAD5",
     "bin": "nvflash64.exe",
     "checkver": {
         "url": "https://www.techpowerup.com/download/nvidia-nvflash/",
