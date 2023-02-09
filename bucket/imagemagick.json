@@ -11,6 +11,10 @@
         "32bit": {
             "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.0-61-Q16-HDRI-x86-dll.exe",
             "hash": "6b23d4cc381d78e0ec17ac0dfd67e407cd623c58bc54cc5d35e72a0cd5d0d534"
+        },
+        "arm64": {
+            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.0-61-Q16-HDRI-arm64-dll.exe",
+            "hash": "0f81a3c8e23c9d91e23a2d467de4bf42be4e99ad83ce6abed44cbfb7fe75185b"
         }
     },
     "innosetup": true,
@@ -27,8 +31,8 @@
     ],
     "checkver": {
         "url": "https://mirror.dogado.de/imagemagick/binaries/digest.rdf",
-        "reverse": true,
-        "regex": "ImageMagick-([\\d.-]+)-Q16-HDRI-x64-dll\\.exe"
+        "regex": "ImageMagick-([\\d.-]+)-Q16-HDRI-x64-dll\\.exe",
+        "reverse": true
     },
     "autoupdate": {
         "architecture": {
@@ -37,6 +41,9 @@
             },
             "32bit": {
                 "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-$version-Q16-HDRI-x86-dll.exe"
+            },
+            "arm64": {
+                "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-$version-Q16-HDRI-arm64-dll.exe"
             }
         },
         "hash": {
