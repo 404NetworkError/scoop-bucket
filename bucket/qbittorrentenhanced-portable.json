@@ -27,8 +27,8 @@
     ],
     "persist": "profile",
     "checkver": {
-        "github": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
-        "regex": "qBittorrent Enhanced Edition v([\\d.]+)"
+        "github": "",
+        "regex": "release-([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
