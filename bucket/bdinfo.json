@@ -15,10 +15,7 @@
             "BDInfo"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/UniqProject/BDInfo",
-        "regex": "BDInfo_v([\\d.]+)\\.zip"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/UniqProject/BDInfo/releases/download/v$version/BDInfo_v$version.zip"
     }

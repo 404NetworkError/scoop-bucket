@@ -31,9 +31,7 @@
             "Flawless Widescreeen"
         ]
     ],
-    "checkver": {
-        "regex": "Current Version is ([\\d.]+)"
-    },
+    "checkver": "Current Version is ([\\d.]+)",
     "autoupdate": {
         "architecture": {
             "64bit": {

@@ -22,9 +22,7 @@
             "FUPX"
         ]
     ],
-    "checkver": {
-        "regex": "Version:</div>([\\d.]+)"
-    },
+    "checkver": "Version:</div>([\\d.]+)",
     "autoupdate": {
         "architecture": {
             "64bit": {

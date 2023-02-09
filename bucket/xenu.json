@@ -17,9 +17,7 @@
             "Xenu's Link Sleuth"
         ]
     ],
-    "checkver": {
-        "regex": "current version: ([\\d.]+)"
-    },
+    "checkver": "current version: ([\\d.]+)",
     "autoupdate": {
         "url": "https://home.snafu.de/tilman/XENU.ZIP"
     }
