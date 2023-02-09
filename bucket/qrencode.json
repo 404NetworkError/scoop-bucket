@@ -8,8 +8,7 @@
     "extract_dir": "QREncode-4.1.1_Win32",
     "bin": "qrencode.exe",
     "checkver": {
-        "url": "https://sourceforge.net/projects/qrencode-for-windows/rss?path=/",
-        "regex": "QREncode-([\\d.]+)_Win32\\(static\\)\\.zip",
+        "sourceforge": "qrencode-for-windows",
         "reverse": "true"
     },
     "autoupdate": {
