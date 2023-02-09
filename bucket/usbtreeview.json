@@ -20,8 +20,5 @@
             "USB Tree Viewer"
         ]
     ],
-    "checkver": {
-        "url": "https://www.uwe-sieber.de/usbtreeview_e.html",
-        "regex": "USB Device Tree Viewer V([\\d.-]+)"
-    }
+    "checkver": "(?sm)Latest History.*?V([\\d.-]+)"
 }
