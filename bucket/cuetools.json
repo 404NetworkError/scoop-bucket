@@ -41,7 +41,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/gchudov/cuetools.net/releases/download/v$version/CUETools_$version.zip"
+                "url": "https://github.com/gchudov/cuetools.net/releases/download/v$version/CUETools_$version.zip",
+                "hash": {
+                    "url": "https://github.com/gchudov/cuetools.net/releases/download/v$version/CUETools_$version.zip.sha256"
+                }
             }
         },
         "extract_dir": "CUETools_$version"
