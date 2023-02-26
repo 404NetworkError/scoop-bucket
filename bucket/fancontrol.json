@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://raw.githubusercontent.com/Rem0o/FanControl.Releases/master/FanControl.zip",
-            "hash": "7631433d9d0993d1a80fd80e4020dfd1b2cd8f042e224799659946b00b0a2a9d"
+            "hash": "57d01085acba2d0ee549192759f33c8dbbc64abd9cf6ded53cdb325a3cc8881c"
         }
     },
     "pre_install": [
