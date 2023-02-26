@@ -26,8 +26,7 @@
         ]
     ],
     "persist": [
-        "userConfig.json",
-        "CACHE",
+        "Configurations",
         "Plugins"
     ],
     "checkver": {
