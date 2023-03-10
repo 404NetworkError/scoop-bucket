@@ -1,20 +1,20 @@
 {
-    "version": "7.1.1-0",
+    "version": "7.1.1-2",
     "description": "Create, edit, compose, and convert 200+ of bitmap images formats.",
     "homepage": "https://imagemagick.org/",
     "license": "ImageMagick",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.1-0-Q16-HDRI-x64-dll.exe",
-            "hash": "caccd08172ba47a98f19a30ddab969f2cf1190950ae88b73add60a0d8feaf26f"
+            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.1-2-Q16-HDRI-x64-dll.exe",
+            "hash": "caaf9406cbebef2a49ad8f0cd118500a97ffddda27c7d1034f55287a74c6ec2b"
         },
         "32bit": {
-            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.1-0-Q16-HDRI-x86-dll.exe",
-            "hash": "8a902992af64d5679cc7a9e4e4cf170c618fd5295d4ad90abb3c1b8266a1ddce"
+            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.1-2-Q16-HDRI-x86-dll.exe",
+            "hash": "1c8f753b52c41584bb2ca11fbfe7b20f63b0b7e54e2e040a98da1b9c536b1849"
         },
         "arm64": {
-            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.1-0-Q16-HDRI-arm64-dll.exe",
-            "hash": "28060dd9a716f37598ec3be1053ffdc53eb8bf64a1ec90f445523964083954a3"
+            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.1-2-Q16-HDRI-arm64-dll.exe",
+            "hash": "54c00175c064bd415c6c779620c6f0a122f3aa945880e0f29c098b5bf07c2d1c"
         }
     },
     "innosetup": true,
