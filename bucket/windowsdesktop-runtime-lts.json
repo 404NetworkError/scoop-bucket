@@ -27,7 +27,7 @@
     },
     "checkver": {
         "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
-        "jsonpath": "$.releases-index[?(@.release-type == 'lts')].latest-runtime"
+        "jsonpath": "$.releases-index[?(@.release-type == 'lts' && @.support-phase == 'active')].latest-runtime"
     },
     "autoupdate": {
         "architecture": {
