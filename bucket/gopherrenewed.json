@@ -1,0 +1,21 @@
+{
+    "version": "0.99",
+    "description": "App to turn a controller into a mouse and keyboard",
+    "homepage": "https://github.com/mike1084/GopherRenewed",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/mike1084/GopherRenewed/blob/master/LICENSE"
+    },
+    "url": "https://github.com/mike1084/GopherRenewed/releases/download/v0.99/Gopher360.exe",
+    "hash": "ca9ce0482f3fcb01c7ad71c8ac68726f1d6e40a77a4da9b771825c96eb5f0990",
+    "shortcuts": [
+        [
+            "Gopher360.exe",
+            "Gopher360"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/mike1084/GopherRenewed/releases/download/v$version/Gopher360.exe"
+    }
+}
