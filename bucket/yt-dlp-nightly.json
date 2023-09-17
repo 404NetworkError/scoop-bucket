@@ -1,5 +1,5 @@
 {
-    "version": "2023.09.17.000520",
+    "version": "2023.09.17.024254",
     "description": "A youtube-dl fork with additional features and fixes.",
     "homepage": "https://github.com/yt-dlp/yt-dlp-nightly-builds",
     "license": "Unlicense",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2023.09.17.000520/yt-dlp.exe",
-            "hash": "sha512:765fb8f11fbcda62fee74d0fd65b2924c9ac0f0d9ca48836a2c21b062dd258a739eb5ce2f1c4c30e4c491c8449be79866db9c0cfbd4ff67423a66da0803e01f5"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2023.09.17.024254/yt-dlp.exe",
+            "hash": "sha512:b2eafc8888455064236a7583b51beca580f6bad30a8c649c9e78830aafaadcb417b7eeede15289111d041073dc36abb2f4a6dc26a1a0588cebf85c7b6f11661b"
         },
         "32bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2023.09.17.000520/yt-dlp_x86.exe#/yt-dlp.exe",
-            "hash": "sha512:cb08bec90ff6d9dac92fb323d1b94fa9de563ec6ada3ef7b1027cefd52f3f23fddcab26eacc3590806b2d869ddb70d92e2579e0fd79e5018ade66a0b417afc84"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2023.09.17.024254/yt-dlp_x86.exe#/yt-dlp.exe",
+            "hash": "sha512:79d759b9909c09a2e691283221718a2d854039c85afa1b3c8f8274186c555fc4d7c9a68c0b9dbc109c4cc3cf2ad9342e6475058b4e0a698c181352d784fc2101"
         }
     },
     "bin": "yt-dlp.exe",
