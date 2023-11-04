@@ -1,5 +1,5 @@
 {
-    "version": "7.5.0",
+    "version": "7.6.2",
     "description": "Powerful and free office suite, a successor to OpenOffice(.org).",
     "homepage": "https://libreoffice.org/",
     "license": "MPL-2.0",
@@ -9,16 +9,16 @@
     "notes": "If you are upgrading from portable version, you can migrate settings by copying \"$persist_dir\\Data\" to \"%AppData%\\LibreOffice\"",
     "architecture": {
         "64bit": {
-            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.5.0/win/x86_64/LibreOffice_7.5.0_Win_x86-64.msi#/dl.msi_",
-            "hash": "55f03c6be88287a787f58c7cc772bf4386839f95edf28828aabf5f12052c718c"
+            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.2/win/x86_64/LibreOffice_7.6.2_Win_x86-64.msi#/dl.msi_",
+            "hash": "f6a3f0794b957e7e95219064639b2a67a315158e614c8cee58a352286b8f38ed"
         },
         "32bit": {
-            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.5.0/win/x86/LibreOffice_7.5.0_Win_x86.msi#/dl.msi_",
-            "hash": "a4df606eb053c027d76a98f6935af6a5843a0814d8352f5b5e89f9f308308a09"
+            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.2/win/x86/LibreOffice_7.6.2_Win_x86.msi#/dl.msi_",
+            "hash": "11c7d9a757b175ad8a994a0d07659e84d7f938eff23f549cd6a4a44ddd8c1725"
         },
         "arm64": {
-            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.5.0/win/aarch64/LibreOffice_7.5.0_Win_aarch64.msi#/dl.msi_",
-            "hash": "d72a5de4d6548a7f862e35b8cc5f07dde6632ce3a536387a469c4b90317b666e"
+            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.2/win/aarch64/LibreOffice_7.6.2_Win_aarch64.msi#/dl.msi_",
+            "hash": "bda3832e936908595de60ff72f329252870bb57804f6de348fad75ecfa3dbc98"
         }
     },
     "pre_install": [
@@ -70,7 +70,7 @@
     ],
     "checkver": {
         "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/",
-        "regex": "a href=\"([\\d.]+)\"",
+        "regex": "a href=\"\\.\/([\\d.]+)\"",
         "reverse": true
     },
     "autoupdate": {
