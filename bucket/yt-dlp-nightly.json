@@ -1,7 +1,7 @@
 {
     "version": "2024.01.09.232723",
     "description": "A youtube-dl fork with additional features and fixes (Nightly)",
-    "homepage": "https://github.com/yt-dlp/yt-dlp-nightly-builds",
+    "homepage": "https://github.com/yt-dlp/yt-dlp",
     "license": "Unlicense",
     "suggest": {
         "ffmpeg": [
@@ -25,7 +25,9 @@
         "yt-dlp.conf",
         "ytdlp_plugins"
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/yt-dlp/yt-dlp-nightly-builds"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
