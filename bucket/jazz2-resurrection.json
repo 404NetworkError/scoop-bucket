@@ -26,7 +26,7 @@
             "extract_dir": "x64",
             "bin": [
                 "Jazz2.exe",
-                "Jazz2_avx2.exe",
+                "Jazz2_axv2.exe",
                 "Jazz2_sdl2.exe"
             ],
             "shortcuts": [
@@ -35,7 +35,7 @@
                     "Jazz² Resurrection"
                 ],
                 [
-                    "Jazz2_avx2.exe",
+                    "Jazz2_axv2.exe",
                     "Jazz² Resurrection (AVX2)"
                 ],
                 [
