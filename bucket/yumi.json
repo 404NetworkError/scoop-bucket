@@ -1,22 +1,22 @@
 {
-    "version": "2.0.9.4",
+    "version": "1.0.2.5",
     "description": "Multisystem Bootable USB Creator",
-    "homepage": "https://www.pendrivelinux.com/yumi-multiboot-usb-creator/",
+    "homepage": "https://yumiusb.com/yumi-exfat/",
     "license": "GPL-2.0-or-later",
-    "url": "https://www.pendrivelinux.com/downloads/YUMI/YUMI-2.0.9.4.exe#/YUMI.exe",
-    "hash": "168a7fd30817e07efecbd1805ff1e8629a62be137b74d0b77958472f0993d134",
+    "url": "https://yumiusb.com/downloads/YUMI/YUMI-exFAT-1.0.2.5.exe#/YUMI.exe",
+    "hash": "6f8788f67dc928cc88ad82cd79e6a2b5bd28bf7a5f7832341a2a7a633c7bf834",
     "bin": "YUMI.exe",
     "shortcuts": [
         [
             "YUMI.exe",
-            "YUMI Legacy (BIOS Only)"
+            "YUMI (exFAT)"
         ]
     ],
-    "checkver": "YUMI-([\\d.]+)\\.exe",
+    "checkver": "YUMI-exFAT-([\\d.a]+)\\.exe",
     "autoupdate": {
-        "url": "https://www.pendrivelinux.com/downloads/YUMI/YUMI-$version.exe#/YUMI.exe",
+        "url": "https://yumiusb.com/downloads/YUMI/YUMI-exFAT-$version.exe#/YUMI.exe",
         "hash": {
-            "url": "https://www.pendrivelinux.com/yumi-multiboot-usb-creator/",
+            "url": "https://yumiusb.com/yumi-exfat/",
             "regex": "(?i)$basename.*?$sha256"
         }
     }
