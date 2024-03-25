@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.uwe-sieber.de/files/UsbTreeView_x64.zip",
-            "hash": "8347b8d7bca09c57d04b8a1ebc4e034e4b0bc69865bafd39588ffc67fc605d79"
+            "hash": "5102ed5653165cd46ac96aab2bcac97a85caa66a592f512ceabea57499a8d6e2"
         },
         "32bit": {
             "url": "https://www.uwe-sieber.de/files/UsbTreeView_Win32.zip",
-            "hash": "1219a8dea8c7d443a2c096ac831aa28d473d96965b4d727b83957c019a58dc83"
+            "hash": "c14714f2a7bef3d681268972ac9a03b48011768483bb3a8743b49b96f80ce98b"
         }
     },
     "bin": "UsbTreeView.exe",
