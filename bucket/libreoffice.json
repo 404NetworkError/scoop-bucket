@@ -1,5 +1,5 @@
 {
-    "version": "7.6.6",
+    "version": "7.6.7",
     "description": "Powerful and free office suite, a successor to OpenOffice(.org).",
     "homepage": "https://libreoffice.org/",
     "license": "MPL-2.0",
@@ -9,16 +9,16 @@
     "notes": "If you are upgrading from portable version, you can migrate settings by copying \"$persist_dir\\Data\" to \"%AppData%\\LibreOffice\"",
     "architecture": {
         "64bit": {
-            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.6/win/x86_64/LibreOffice_7.6.6_Win_x86-64.msi#/dl.msi_",
-            "hash": "6570eb9362fa56dee557400d6b90967f18a5c442b4807dd5a56747ff760ae1bb"
+            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.7/win/x86_64/LibreOffice_7.6.7_Win_x86-64.msi#/dl.msi_",
+            "hash": "89d0be012fa078aa32e210665170215fdc5f2d17b2bba1dffcfa4eac9d002f67"
         },
         "32bit": {
-            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.6/win/x86/LibreOffice_7.6.6_Win_x86.msi#/dl.msi_",
-            "hash": "80243cc35151e03fde57650e63aa6a62174af1ff6f9ebb520d1070641b770a0d"
+            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.7/win/x86/LibreOffice_7.6.7_Win_x86.msi#/dl.msi_",
+            "hash": "3ebc33a80dca6a1d190fd98714ac9b5626ca374e0ea8098ce9e049b92316a477"
         },
         "arm64": {
-            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.6/win/aarch64/LibreOffice_7.6.6_Win_aarch64.msi#/dl.msi_",
-            "hash": "0ef69a51e01cb112d77947577d278ad8dc280a4c08e1c263b4f3a67ef75c58c4"
+            "url": "https://southfront.mm.fcix.net/tdf/libreoffice/stable/7.6.7/win/aarch64/LibreOffice_7.6.7_Win_aarch64.msi#/dl.msi_",
+            "hash": "c9f5957671dd2cb140d4419d76bc9980e792d80e8b92655f9ac84c312c42ee61"
         }
     },
     "pre_install": [
