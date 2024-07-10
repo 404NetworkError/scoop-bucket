@@ -17,7 +17,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repositories/351852568/commits",
+        "url": "https://api.github.com/repos/LesFerch/WinSetView/commits",
         "jsonpath": "$.[0].sha",
         "regex": "([\\da-z]+)"
     },
