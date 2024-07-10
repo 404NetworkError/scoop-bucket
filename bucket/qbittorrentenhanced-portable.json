@@ -2,10 +2,7 @@
     "version": "4.6.5.10",
     "description": "qBittorrent Enhanced. BitTorrent client with anti-leech enhancement.",
     "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
-    "license": {
-        "identifier": "GPL-2.0-only",
-        "url": "https://github.com/qbittorrent/qBittorrent/blob/master/COPYING"
-    },
+    "license": "GPL-2.0-only",
     "notes": "Web UI Theme https://github.com/WDaan/VueTorrent",
     "architecture": {
         "64bit": {
