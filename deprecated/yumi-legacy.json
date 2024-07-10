@@ -3,7 +3,9 @@
     "description": "Multisystem Bootable USB Creator",
     "homepage": "https://yumiusb.com/yumi-legacy/",
     "license": "GPL-2.0-or-later",
-    "suggest": "404NetworkError/yumi",
+    "suggest": {
+        "yumi": "404NetworkError/yumi"
+    },
     "notes": "This tool has been archive and is no longer actively updated. Recommend using YUMI-exFAT.",
     "url": "https://yumiusb.com/downloads/YUMI/YUMI-2.0.9.4.exe#/YUMI.exe",
     "hash": "168a7fd30817e07efecbd1805ff1e8629a62be137b74d0b77958472f0993d134",
