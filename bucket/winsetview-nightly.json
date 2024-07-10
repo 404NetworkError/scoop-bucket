@@ -1,5 +1,5 @@
 {
-    "version": "480e38614ad8836dfc565dc60de247cedb56df4a",
+    "version": "4c0a3a66187eaf4c5b36b6b5512cb9f7e9a09ee8",
     "description": "Globally set File Explorer folder views",
     "homepage": "https://github.com/LesFerch/WinSetView",
     "license": {
@@ -10,9 +10,9 @@
         "\"Microsoft (R) HTML Application host\" is required to be the default \"Open with\" application for `.hta` files.",
         "View full details on how to do this at https://github.com/LesFerch/WinSetView/blob/main/DownloadHelp.md#how-to-correct-the-hta-file-association"
     ],
-    "url": "https://github.com/LesFerch/WinSetView/archive/480e38614ad8836dfc565dc60de247cedb56df4a.zip",
-    "hash": "e388808496ab1e64bf0f6a6676b9c44691ebd639d7f927ce25f71ab236368c95",
-    "extract_dir": "WinSetView-480e38614ad8836dfc565dc60de247cedb56df4a",
+    "url": "https://github.com/LesFerch/WinSetView/archive/4c0a3a66187eaf4c5b36b6b5512cb9f7e9a09ee8.zip",
+    "hash": "48c1fb2386d310784cb69c9ffd2487858bdcb24a07c13e725d79fd851b749369",
+    "extract_dir": "WinSetView-4c0a3a66187eaf4c5b36b6b5512cb9f7e9a09ee8",
     "shortcuts": [
         [
             "WinSetView.hta",
@@ -20,11 +20,12 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/LesFerch/WinSetView/commits",
-        "jsonpath": "$.[0].sha"
+        "url": "https://api.github.com/repositories/351852568/commits",
+        "jsonpath": "$.[0].sha",
+        "regex": "([\\da-z]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/LesFerch/WinSetView/archive/$matchSha.zip",
-        "extract_dir": "WinSetView-$matchSha"
+        "url": "https://github.com/LesFerch/WinSetView/archive/$version.zip",
+        "extract_dir": "WinSetView-$version"
     }
 }
