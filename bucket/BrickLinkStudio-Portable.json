@@ -23,8 +23,13 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.bricklink.com/v3/studio/download.page",
-        "regex": "\"strVersion\":\"([\\d._]+)",
+        "script": [
+            "$cont = $(Invoke-WebRequest('https://www.bricklink.com/v3/studio/download.page')).Content",
+            "if(!($cont -match 'blapp\\.models\\.set\\( (.*) \\);')) { continue }",
+            "Write-Output $matches[1]"
+        ],
+        "jsonpath": "$.[?(@.name == 'changeLog')].data[*].strVersion",
+        "regex": "([\\d._]+)",
         "reverse": true
     },
     "autoupdate": {
