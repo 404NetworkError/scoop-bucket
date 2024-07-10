@@ -3,7 +3,6 @@
     "description": "BrickLink Studio. Studio is a desktop application that allows users to build LEGO models using virtual parts.",
     "homepage": "https://www.bricklink.com/v3/studio/download.page",
     "license": "Unknown",
-    "changelog": "https://www.bricklink.com/v3/studio/download.page",
     "innosetup": true,
     "architecture": {
         "64bit": {
