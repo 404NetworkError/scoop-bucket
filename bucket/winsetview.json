@@ -1,5 +1,5 @@
 {
-    "version": "2.96",
+    "version": "2.97",
     "description": "Globally set File Explorer folder views",
     "homepage": "https://github.com/LesFerch/WinSetView",
     "license": "MIT",
@@ -7,9 +7,9 @@
         "\"Microsoft (R) HTML Application host\" is required to be the default \"Open with\" application for `.hta` files.",
         "View full details on how to do this at https://github.com/LesFerch/WinSetView/blob/main/DownloadHelp.md#how-to-correct-the-hta-file-association"
     ],
-    "url": "https://github.com/LesFerch/WinSetView/archive/refs/tags/2.96.zip",
-    "hash": "c97af9181117e70801ccb26c603e6a898636b52b552f3f59b7f3f517b914c338",
-    "extract_dir": "WinSetView-2.96",
+    "url": "https://github.com/LesFerch/WinSetView/archive/refs/tags/2.97.zip",
+    "hash": "4f2e9eb027a8a79791a9da4eb705303c5a602f005a9e50e6bdcfab5d6d78e47f",
+    "extract_dir": "WinSetView-2.97",
     "bin": "WinSetView.hta",
     "shortcuts": [
         [
