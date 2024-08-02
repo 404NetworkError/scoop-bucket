@@ -10,12 +10,14 @@
     "url": "https://github.com/LesFerch/WinSetView/archive/refs/tags/2.99.zip",
     "hash": "1d8d04e3d3f87aba7b8056edf8ee7bf19285d6e085843d6ea9097ac1c9d3a3c0",
     "extract_dir": "WinSetView-2.99",
-    "bin": "WinSetView.hta",
     "shortcuts": [
         [
-            "WinSetView.hta",
+            "WinSetView.exe",
             "WinSetView"
         ]
+    ],
+    "persist": [
+        "AppData\\Backup"
     ],
     "checkver": "github",
     "autoupdate": {
