@@ -2,9 +2,9 @@
     "homepage": "https://github.com/pypa/virtualenv",
     "description": "Virtual Python Environment builder",
     "license": "MIT",
-    "version": "20.26.5",
+    "version": "20.26.6",
     "url": "https://bootstrap.pypa.io/virtualenv/virtualenv.pyz",
-    "hash": "71eb078938e9a7662d5ee2ad716aaa1873c21d85656a8ced3b90d62af868b070",
+    "hash": "4eb66c18aa1f596dc85763c134f762c2f8be0ed1347de8316fa5db37d762ab7a",
     "suggest": {
         "Python": "python"
     },
