@@ -1,4 +1,5 @@
 {
   "Books": "\\?\REPLACE_HERE\Books",
-  "FirstLaunch": true
+  "FirstLaunch": true,
+  "InProgress": "REPLACE_HERE\Temp"
 }
