@@ -4,7 +4,7 @@
     "homepage": "https://github.com/SteamRE/DepotDownloader",
     "license": "GPL-2.0-only",
     "suggest": {
-        ".NET Desktop Runtime": "extras/windowsdesktop-runtime"
+        ".NET Desktop Runtime": "extras/windowsdesktop-runtime-lts"
     },
     "architecture": {
         "64bit": {
