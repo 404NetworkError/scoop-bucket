@@ -1,10 +1,10 @@
 {
-    "version": "1.0.2.9",
+    "version": "1.0.3.0",
     "description": "Multisystem Bootable USB Creator",
     "homepage": "https://yumiusb.com/yumi-exfat/",
     "license": "GPL-2.0-or-later",
-    "url": "https://yumiusb.com/downloads/YUMI/YUMI-exFAT-1.0.2.9.exe#/YUMI.exe",
-    "hash": "e6b269acb765452d094ff79d80917d5416377ab8b899330e22004f4549aa94c2",
+    "url": "https://yumiusb.com/downloads/YUMI/YUMI-exFAT-1.0.3.0.exe#/YUMI.exe",
+    "hash": "f259d5b2cbaaef9348c27a8f1fc2cd1f52646501b406048fba6ffbe002ff57c1",
     "shortcuts": [
         [
             "YUMI.exe",
