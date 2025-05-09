@@ -1,5 +1,5 @@
 {
-    "version": "3.3.0",
+    "version": "3.4.0",
     "description": "A Steam depot downloader utilizing the SteamKit2 library.",
     "homepage": "https://github.com/SteamRE/DepotDownloader",
     "license": "GPL-2.0-only",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.3.0/DepotDownloader-windows-x64.zip",
-            "hash": "c2fe799c6b8cbb05743668fad98504283ddfb92a03f94b7b9d661fc3e2ddf244"
+            "url": "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.4.0/DepotDownloader-windows-x64.zip",
+            "hash": "41c9e9f0df54b3ad02e67a11726756e5c73283bd7c2e1b04acfa5ae4c2ed3767"
         },
         "arm64": {
-            "url": "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.3.0/DepotDownloader-windows-arm64.zip",
-            "hash": "2ed8fb78e5557439bd3bb841dc6c034e33af10cd94c5fd9f9a038178ea357cfd"
+            "url": "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.4.0/DepotDownloader-windows-arm64.zip",
+            "hash": "1449ba47775e9974036e615bedf00d72bef747cc5b93a78048ed4e0b2c63b2b3"
         }
     },
     "bin": "DepotDownloader.exe",
