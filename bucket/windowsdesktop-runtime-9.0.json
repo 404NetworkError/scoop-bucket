@@ -1,21 +1,21 @@
 {
-    "version": "7.0.19",
-    "description": "Microsoft .NET 7.0 Desktop Runtime",
-    "homepage": "https://dotnet.microsoft.com/download/dotnet/7.0",
+    "version": "9.0.11",
+    "description": "Microsoft .NET Desktop Runtime 9 series",
+    "homepage": "https://dotnet.microsoft.com/download/dotnet",
     "license": "MIT",
-    "notes": "You can now remove this installer with 'scoop uninstall windowsdesktop-runtime-7.0'",
+    "notes": "You can now remove this installer with 'scoop uninstall -p windowsdesktop-runtime-lts'",
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.19/windowsdesktop-runtime-7.0.19-win-x64.exe",
-            "hash": "sha512:a5bf3d8a0552d780d4b5dcef7b4b8158cedd4c3d724353343912861c1195d21706ec52b718216d0a4f9cd65cc385afb6864115f9217cd72379fec22dd37be3cd"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/9.0.11/windowsdesktop-runtime-9.0.11-win-x64.exe",
+            "hash": "sha512:5c6dd5616f8365cc618087916bf9e0470f5fe61242010df040ce7a688acc0598797bce0a62d3915d8951dc70f89deb1e30223c1dc0918f05af92c88658f4b3ec"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.19/windowsdesktop-runtime-7.0.19-win-x86.exe",
-            "hash": "sha512:bae6f65513a65b661bd762094a729a5683306d0f1bda1a8071309baa632abfd9902d9c1436d20f703a94aa8c0e3133f42fae619866be1785a01cd997390cbe41"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/9.0.11/windowsdesktop-runtime-9.0.11-win-x86.exe",
+            "hash": "sha512:d99ac0c5b9526bd4dcb030600dc94432bc165585b82c4305753f928ff89257e508a20fe52f196707e8cd37ca78e51e64a60bc9aa7d66f8189142d489ddcd5081"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.19/windowsdesktop-runtime-7.0.19-win-arm64.exe",
-            "hash": "sha512:aed3c87cf5f42b7a63ba1c2274962b57236b866529afc581896ec8d2ad97acaa5fdfafb483478cffa6617e5f7e390941708a10108339a1978ed00def11b86344"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/9.0.11/windowsdesktop-runtime-9.0.11-win-arm64.exe",
+            "hash": "sha512:148918cd6536f75cd0ce4a64685a0ccb5255e97b5201c0258fea8725676c46f844c3d20040ee615c8011567427c756119df0f86cb2933bd6389df692edcdeb6b"
         }
     },
     "pre_install": "if (!(is_admin)) { error 'Admin privileges are required.'; break }",
@@ -24,7 +24,7 @@
     },
     "checkver": {
         "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
-        "jsonpath": "$.releases-index[?(@.channel-version == '7.0')].latest-runtime",
+        "jsonpath": "$.releases-index[?(@.channel-version == '9.0')].latest-runtime",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
