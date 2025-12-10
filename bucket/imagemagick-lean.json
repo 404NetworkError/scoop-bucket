@@ -1,23 +1,23 @@
 {
-    "version": "7.1.2-3",
+    "version": "7.1.2-10",
     "description": "Create, edit, compose, and convert 200+ bitmap images formats.",
     "homepage": "https://imagemagick.org/",
     "license": "ImageMagick",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.2-3-portable-Q16-HDRI-x64.zip",
-            "hash": "aff4739061ba3cb074b2b229a63e0b8b85d54e5661ae8785d736b49a782fb1a0",
-            "extract_dir": "ImageMagick-7.1.2-3-portable-Q16-HDRI-x64"
+            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.2-10-portable-Q16-HDRI-x64.7z",
+            "hash": "ad10ae61833b074043dfeb5499e047f06553b6479498632766107bcfa99c773c",
+            "extract_dir": "ImageMagick-7.1.2-10-portable-Q16-HDRI-x64"
         },
         "32bit": {
-            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.2-3-portable-Q16-HDRI-x86.zip",
-            "hash": "c36967c635232bf3a616b477173b426840e22f99dbc2dc7373eef05a6449fdaa",
-            "extract_dir": "ImageMagick-7.1.2-3-portable-Q16-HDRI-x86"
+            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.2-10-portable-Q16-HDRI-x86.7z",
+            "hash": "827af4f94a39a0bffa987ab4a8826db864dc79acc970d82cc760a5f29af34587",
+            "extract_dir": "ImageMagick-7.1.2-10-portable-Q16-HDRI-x86"
         },
         "arm64": {
-            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.2-3-portable-Q16-HDRI-arm64.zip",
-            "hash": "3d147939e5230745a749514f821b9e70a993b174fd878ac76184a834abb41192",
-            "extract_dir": "ImageMagick-7.1.2-3-portable-Q16-HDRI-arm64"
+            "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-7.1.2-10-portable-Q16-HDRI-arm64.7z",
+            "hash": "46f0356e7a4b6146f841b7dd845c8b87cfb49c981990cb3ead7d7960516fb591",
+            "extract_dir": "ImageMagick-7.1.2-10-portable-Q16-HDRI-arm64"
         }
     },
     "bin": "magick.exe",
@@ -28,20 +28,20 @@
     "checkver": {
         "url": "https://mirror.dogado.de/imagemagick/binaries/digest.rdf",
         "reverse": true,
-        "regex": "ImageMagick-([\\d.-]+)-portable-Q16-HDRI-x64\\.zip"
+        "regex": "ImageMagick-([\\d.-]+)-portable-Q16-HDRI-x64\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-$version-portable-Q16-HDRI-x64.zip",
+                "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-$version-portable-Q16-HDRI-x64.7z",
                 "extract_dir": "ImageMagick-$version-portable-Q16-HDRI-x64"
             },
             "32bit": {
-                "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-$version-portable-Q16-HDRI-x86.zip",
+                "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-$version-portable-Q16-HDRI-x86.7z",
                 "extract_dir": "ImageMagick-$version-portable-Q16-HDRI-x86"
             },
             "arm64": {
-                "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-$version-portable-Q16-HDRI-arm64.zip",
+                "url": "https://mirror.dogado.de/imagemagick/binaries/ImageMagick-$version-portable-Q16-HDRI-arm64.7z",
                 "extract_dir": "ImageMagick-$version-portable-Q16-HDRI-arm64"
             }
         },
