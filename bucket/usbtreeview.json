@@ -3,7 +3,7 @@
     "description": "View USB devices in a tree-like structure",
     "homepage": "https://www.uwe-sieber.de/usbtreeview_e.html",
     "license": "Freeware",
-    "note": "For the last Windows 7 supported version, please use 404NetworkError/usbtreeview-win7",
+    "notes": "For the last Windows 7 supported version, please use 404NetworkError/usbtreeview-win7",
     "architecture": {
         "64bit": {
             "url": "https://www.uwe-sieber.de/files/UsbTreeView_x64.zip",
