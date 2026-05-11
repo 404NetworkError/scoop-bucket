@@ -14,6 +14,7 @@
             "hash": "9896ff9f9be63edc69ccdd0ae20d32badffd576f77c433e327500112007213c4"
         }
     },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\CADET.DAT\")) { New-Item \"$dir\\CADET.DAT\" | Out-Null }",
     "shortcuts": [
         [
             "SpaceCadetPinball.exe",
