@@ -3,6 +3,7 @@
     "homepage": "https://github.com/k4zmu2a/SpaceCadetPinball/",
     "description": "Reverse engineering of 3D Pinball for Windows - Space Cadet",
     "license": "MIT",
+    "note": "Requires `CADET.DAT` and `SOUND` folder sourced from the original game or Full Tilt Pinball",
     "architecture": {
         "64bit": {
             "url": "https://github.com/k4zmu2a/SpaceCadetPinball/releases/download/Release_2.1.0/SpaceCadetPinballx64Win.zip",
@@ -22,6 +23,10 @@
             "SpaceCadetPinball.exe",
             "Space Cadet"
         ]
+    ],
+    "persist": [
+        "SOUND",
+        "CADET.DAT"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/k4zmu2a/SpaceCadetPinball/releases/latest",
