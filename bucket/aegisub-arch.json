@@ -11,8 +11,20 @@
     },
     "pre_install": [
         "Expand-7zipArchive -Path \"$dir\\aegisub-portable-64.zip\" -ExtractDir 'aegisub-portable' -Removal",
-        "if (!(Test-Path \"$persist_dir\\config.json\")) { New-Item \"$dir\\config.json\" | Out-Null }",
-        "if (!(Test-Path \"$persist_dir\\hotkey.json\")) { New-Item \"$dir\\hotkey.json\" | Out-Null }",
+        "'config.json', 'hotkey.json' | ForEach {",
+        "   if (Test-Path \"$persist_dir\\$_\") {",
+        "       Copy-Item \"$persist_dir\\$_\" \"$dir\\\"",
+        "   }",
+        "}"
+    ],
+    "pre_uninstall": [
+        "# Manually persist files",
+        "'config.json', 'hotkey.json' | ForEach {",
+        "   if (Test-Path \"$dir\\$_\") {",
+        "       ensure \"$persist_dir\" | Out-Null",
+        "       Copy-Item \"$dir\\$_\" \"$persist_dir\\\"",
+        "   }",
+        "}"
     ],
     "shortcuts": [
         [
