@@ -10,7 +10,7 @@
         }
     },
     "pre_install": [
-        "Expand-7zipArchive -Path \"$dir\\aegisub-portable-64.zip\" -ExtractDir 'aegisub-portable' -Removal",
+        "Expand-7zipArchive -Path \"$dir\\aegisub-*portable*.zip\" -ExtractDir 'aegisub-portable' -Removal",
         "'config.json', 'hotkey.json' | ForEach {",
         "   if (Test-Path \"$persist_dir\\$_\") {",
         "       Copy-Item \"$persist_dir\\$_\" \"$dir\\\"",
